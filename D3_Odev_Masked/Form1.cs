@@ -25,12 +25,15 @@ namespace D3_Odev_Masked
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            #region Parameters
+
             string name = textBox1.Text;
             string surname = textBox2.Text;
             string identificationNumber = maskedTextBox1.Text;
             string phoneNumber = maskedTextBox2.Text;
             string birthDate = dateTimePicker1.Text;
-            string city = textBox3.Text;
+            string city = textBox3.Text; 
+            #endregion
 
             listBox1.Items.Add(name + " " + surname + " " + identificationNumber + " " + phoneNumber + " " + birthDate + " " + city);
 
