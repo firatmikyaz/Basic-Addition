@@ -12,15 +12,29 @@ namespace D3_Odev_Masked
 {
     public partial class Form1 : Form
     {
+        //constructor
         public Form1()
         {
             InitializeComponent();
+
+            comboBox1.Items.Add("Istanbul");
+            comboBox1.Items.Add("Ankara");
+            comboBox1.Items.Add("İzmir");
+            comboBox1.Items.Add("Eskişehir");
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnSave_Click(object sender, EventArgs e)
         {
-            listBox1.Items.Add(textBox1.Text + " " + textBox2.Text + " " + maskedTextBox1.Text + " " + maskedTextBox2.Text + " " + dateTimePicker1.Text + " " + textBox3.Text);
-            comboBox1.Items.Add(textBox3.Text);
+            string name = textBox1.Text;
+            string surname = textBox2.Text;
+            string identificationNumber = maskedTextBox1.Text;
+            string phoneNumber = maskedTextBox2.Text;
+            string birthDate = dateTimePicker1.Text;
+            string city = textBox3.Text;
+
+            listBox1.Items.Add(name + " " + surname + " " + identificationNumber + " " + phoneNumber + " " + birthDate + " " + city);
+
+            comboBox1.Items.Add(city);
         }
     }
 }

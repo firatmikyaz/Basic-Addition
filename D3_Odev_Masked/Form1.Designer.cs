@@ -39,7 +39,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.listBox1 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -137,15 +137,15 @@
             this.listBox1.Size = new System.Drawing.Size(613, 94);
             this.listBox1.TabIndex = 10;
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.Location = new System.Drawing.Point(485, 129);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 62);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Kaydet";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnSave.Location = new System.Drawing.Point(485, 129);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(104, 62);
+            this.btnSave.TabIndex = 11;
+            this.btnSave.Text = "Kaydet";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // comboBox1
             // 
@@ -180,7 +180,7 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnSave);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label5);
@@ -193,7 +193,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Corbel", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "D3-Ödev";
             this.ResumeLayout(false);
@@ -214,7 +214,7 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label6;
